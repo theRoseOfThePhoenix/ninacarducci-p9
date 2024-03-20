@@ -1,81 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <html
-    prefix="og:
-http://ogp.me/ms#"
-  >
+ <html lang="fr"> <!-- ajout de la langue  -->
     <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Nina Carducci-Photographe portraits & événementiel à Bordeaux</title> <!-- ajout d'un titre -->
       <meta charset="UTF-8" />
-      <meta
-        name="description"
-        content="site vitrine de Nina Carducci-Photographe portraits & événementiel"
-      />
-      <!-- meta tag facebook -->
-      <meta property="og:type" content="business.business" />
-      <meta
-        property="og:title"
-        content="Nina Carducci-Photographe portraits & événementiel"
-      />
-      <meta
-        property="og:url"
-        content="https://theroseofthephoenix.github.io/ninacarducci-p9/"
-      />
-      <meta
-        property="og:image"
-        content="https://theroseofthephoenix.github.io/ninacarducci…ssets/imagesWebP/auto-portrait-Nina-Carducci.webp"
-      />
-      <meta
-        property="og:description"
-        content="Je suis Nina Carducci-Photographe portraits & événementiel.
-Mon numéro de téléphone : 05 56 67 78 89.
-Je réponds au téléphone du lundi au vendredi de 10h à 19h."
-      />
-      <meta
-        property="business:contact_data:street_address"
-        content="68 avenue Alsace-Lorraine"
-      />
-      <meta property="business:contact_data:locality" content="Bordeaux" />
-      <meta property="business:contact_data:region" content="Gironde" />
-      <meta property="business:contact_data:postal_code" content="33200" />
-      <meta property="business:contact_data:country_name" content="France" />
-
-      <!-- meta tag tweeter -->
-
-      <meta name="twitter:card" content="summary" />
-      <meta
-        name="twitter:title"
-        content="Nina Carducci-Photographe portraits & événementiel"
-      />
-      <meta
-        name="twitter:site"
-        content="@https://theroseofthephoenix.github.io/ninacarducci-p9/"
-      />
-      <meta
-        name="twitter:description"
-        content="Je suis Nina Carducci-Photographe
-portraits & événementiel. Mon numéro de téléphone : 05 56 67 78 89. Je
-réponds au téléphone du lundi au vendredi de 10h à 19h."
-      />
-      <meta
-        name="twitter:image"
-        content="	https://theroseofthephoenix.github.io/ninacarducci…ssets/imagesWebP/auto-portrait-Nina-Carducci.webp"
-      />
-      <meta
-        name="twitter:image:alt"
-        content="auto portrait de Nina Carducci photographe en Gironde-Bordeau"
-      />
-      <!-- fin des meta tag -->
-
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description"content="Nina Carducci-Photographe portraits & événementiel à Bordeaux"
+      /><!-- ajout de la meta description  -->
       <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-      <link rel="stylesheet" href="./assets/style.min.css" />
+      <link rel="stylesheet" href="./assets/style.min.css" /> <!-- minifi css  -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
         href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
         rel="stylesheet"
       />
-      <title>Nina Carducci-Photographe portraits & événementiel</title>
       <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
       <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -84,6 +22,42 @@ réponds au téléphone du lundi au vendredi de 10h à 19h."
       ></script>
       <script src="./assets/maugallery.js"></script>
       <script src="./assets/scripts.js"></script>
+      <!-- données enrichis -->
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Photographe - Nina Carducci",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 avenue Alsace-Lorraine",
+            "postalCode": "33200",
+            "addressLocality": "Bordeaux"
+          },
+          "telephone": "05 56 67 78 89",
+          "Openinghours": "du lundi au vendredi de 10h à 19h"
+        }
+      
+      </script>
+
+      	<!-- meta réseaux sociaux -->
+	<meta property="og:title" content="Nina Carducci-Photographe portraits & événementiel à Bordeaux" >
+	<meta property="og:type" content="website" >
+	<meta property="og:description"
+		content="Site web de Nina Carducci photographe freelance, reserver votre secance shooting et mémoriser vos evenements à Bordeaux" >
+	<meta property="author" content="Nina Carducci" >
+	<meta property="og:image" content="./assets/images/nina.webp" >
+	<meta property="og:url" content="https://theroseofthephoenix.github.io/ninacarducci-p9//">
+
+	<!-- meta card twitter -->
+	<meta name="twitter:card" content="summary" >
+	<meta name="twitter:site" content="@ninacarducci" >
+	<meta name="twitter:creator" content="@ninacarducci" >
+	<meta property="og:url" content="https://theroseofthephoenix.github.io/ninacarducci-p9/" >
+	<meta property="og:title" content="Nina Carducci-Photographe portraits & événementiel à Bordeaux" >
+	<meta property="og:description"
+		content="Site web de Nina Carducci photographe freelance, reserver votre secance shooting et mémoriser vos evenements à Bordeaux" >
+	<meta property="og:image" content="./assets/images/nina.webp" >
     </head>
     <body>
       <div class="top-header">
@@ -100,7 +74,7 @@ réponds au téléphone du lundi au vendredi de 10h à 19h."
                 href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
                 target="_blank"
                 ><img
-                  src="assets/images/instagram.png"
+                  src="assets/imagesWebP/instagram.png"
                   alt="logo lien instagrame"
               /></a>
             </li>
