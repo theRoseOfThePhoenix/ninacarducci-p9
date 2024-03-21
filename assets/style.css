@@ -358,3 +358,10 @@ input[type="submit"] {
     width: 80%;
   }
 }
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
