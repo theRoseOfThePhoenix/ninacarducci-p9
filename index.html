@@ -33,6 +33,22 @@
     ></script>
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
+    <!--prechargement des images du slider-->
+    <link
+      rel="preload"
+      href="./assets/imagesWebP/slider/ryoji-iwata.webp"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="./assets/imagesWebP/slider/edward-cisneros.webp"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="./assets/imagesWebP/slider/nicholas-green.webp"
+      as="image"
+    />
     <!-- données enrichis -->
     <script type="application/ld+json" defer>
       {
@@ -144,25 +160,52 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="./assets/imagesWebP/slider/ryoji-iwata.webp"
-                class="d-block w-100"
-                alt="portrait d'homme d'affaire traversant un passage piéton"
-              />
+              <picture>
+                <source
+                  media="(max-width: 425px)"
+                  srcset="
+                    ./assets/imagesWebPmobile/slider/ryoji-iwata_mobile.webp
+                  "
+                />
+                <img
+                  src="./assets/imagesWebP/slider/ryoji-iwata.webp"
+                  class="d-block w-100"
+                  loading="lazy"
+                  alt="portrait d'homme d'affaire traversant un passage piéton"
+                />
+              </picture>
             </div>
             <div class="carousel-item">
-              <img
-                src="./assets/imagesWebP/slider/edward-cisneros.webp"
-                class="d-block w-100"
-                alt="photo d'un couple de marier s'embrassant"
-              />
+              <picture>
+                <source
+                  media="(max-width: 425px)"
+                  srcset="
+                    ./assets/imagesWebPmobile/slider/edward-cisneros_mobile.webp
+                  "
+                />
+                <img
+                  src="./assets/imagesWebP/slider/edward-cisneros.webp"
+                  class="d-block w-100"
+                  loading="lazy"
+                  alt="photo d'un couple de marier s'embrassant"
+                />
+              </picture>
             </div>
             <div class="carousel-item">
-              <img
-                src="./assets/imagesWebP/slider/nicholas-green.webp"
-                class="d-block w-100"
-                alt="Foule du concert de Nicholas Green"
-              />
+              <picture>
+                <source
+                  media="(max-width: 425px)"
+                  srcset="
+                    ./assets/imagesWebPmobile/slider/nicholas-green_mobile.webp
+                  "
+                />
+                <img
+                  src="./assets/imagesWebP/slider/nicholas-green.webp"
+                  class="d-block w-100"
+                  loading="lazy"
+                  alt="Foule du concert de Nicholas Green"
+                />
+              </picture>
             </div>
           </div>
           <button
@@ -187,10 +230,19 @@
       </div>
       <div id="about">
         <div class="picture left">
-          <img
-            src="./assets/imagesWebP/auto-portrait-Nina-Carducci.webp"
-            alt="auto-portrait de Nina Carducci"
-          />
+          <picture>
+            <source
+              media="(max-width: 425px)"
+              srcset="
+                ./assets/imagesWebPmobile/auto-portrait-Nina-Carducci_mobile.webp
+              "
+            />
+            <img
+              src="./assets/imagesWebP/auto-portrait-Nina-Carducci.webp"
+              alt="auto-portrait de Nina Carducci"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div id="about-me">
           <h2 class="about-me__title">A propos de moi</h2>
@@ -222,54 +274,63 @@
               alt="photo du concert de Aaron-Paul vue de la foule en contreplonger"
               data-gallery-tag="Concert"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/concerts/aaron-paul-concert-foule-contreplonger.webp"
             />
             <img
               alt="Portrait de Ali Morshedlou en costar"
               data-gallery-tag="Entreprises"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/entreprise/ali-morshedlou-portrait-costar.webp"
             />
             <img
               alt=" Jason Goodman collaboratrice de bonne humeur"
               data-gallery-tag="Entreprises"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/entreprise/jason-goodman-bonne-humeur.webp"
             />
             <img
               alt=" Photo de mariade de Hannah Busing avec les mains en gros plan"
               data-gallery-tag="Mariages"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/mariage/hannah-busing-mains-aliances.webp"
             />
             <img
               alt="portrait photo de Ade Tunji avec les yeux fermer"
               data-gallery-tag="Portrait"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/portraits/ade-tunji-portrait-yeux-fermer.webp"
             />
             <img
               alt="photo de mariage de Jakob Owens avec un regard complice avec sa femme"
               data-gallery-tag="Mariages"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/mariage/jakob-owens-mariage-sourirescomplice.webp"
             />
             <img
               alt="portrait photo de Nino Van Prattenburg avec regard naturel"
               data-gallery-tag="Portrait"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/portraits/nino-van-prattenburg--portrait-naturel.webp"
             />
             <img
               alt="photo sur scène du chanteur lors du concert Austin Neill"
               data-gallery-tag="Concert"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/concerts/austin-neill-concert-chanteur-scène.webp"
             />
             <img
               alt="photo portrait d'entreprise d'une collaborateur travaillant sur ordianteur avec le sourire"
               data-gallery-tag="Entreprises"
               class="gallery-item"
+              loading="lazy"
               src="./assets/imagesWebP/gallery/entreprise/mateus-campos-felipe-sourire-ordianateur-portable.webp"
             />
           </div>
@@ -375,6 +436,7 @@
             <img
               alt="photo d'un appareille photo avec effect de couleur et en gros plan"
               src="./assets/imagesWebP/camera-en-gros-plan.webp"
+              loading="lazy"
             />
           </div>
         </div>
